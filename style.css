@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.twitter--follower {
+    width: 324px;
+    height: 324px;
+    background: #f0f0f0;
+}
+
+.twitter--tweet {
+    width: 324px;
+    height: 432px;
+    background: #f0f0f0;
+}
+
+.facebook--post {
+    width: 432px;
+    height: 864px;
+    background: #f0f0f0;
+    border-left: 5px solid #4b5177;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.twitter {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  */
+
+.Tweet-avatar img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.Tweet-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.Tweet-inner {
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.Tweet-nick {
+    display: flex;
+    flex-direction: row;
+}
+
+span.Tweet-name , span.Tweet-nickname {
+    font-size: 0.8em;
+}
+
+p.Tweet-text {
+    font-size: .8em;
+}
+
+.Tweet-inner::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+    
+}
+
+.twitter--tweet-header {
+    background: #34a1f2;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.twitter--follower-header {
+    background: #34a1f2;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.facebook--follower-header {
+    background: #4267b3;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em;
+}
